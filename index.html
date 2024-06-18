@@ -1,0 +1,2265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charSet="utf-8"/>
+        <script>
+            (function __WEBPACK_DEFAULT_EXPORT__(e) {
+                "serviceWorker"in navigator && window.addEventListener("load", function() {
+                    navigator.serviceWorker.register(e).catch(e=>{
+                        console.log("Service Worker registration failed: ", e);
+                    }
+                    );
+                });
+            }
+            )('/service-worker.js');
+        </script>
+        <script>
+            (function prepareExternalScripts(l, d, u, o, a, r, c) {
+                l.__loadGTM = function() {
+                    var e = d.getElementsByTagName(u)[0]
+                      , t = (l[o] = l[o] || [],
+                    l[o].push({
+                        "gtm.start": new Date().getTime(),
+                        event: "gtm.js"
+                    }),
+                    d.createElement(u))
+                      , n = "dataLayer" != o ? "&l=" + o : "";
+                    t.async = !0,
+                    t.src = "https://www.googletagmanager.com/gtm.js?id=" + a + n,
+                    e.parentNode.insertBefore(t, e);
+                }
+                ,
+                l.__loadXtremePushLibrary = function(e) {
+                    try {
+                        var t = d.getElementsByTagName(u)[0]
+                          , n = (l.XtremePushObject = r,
+                        l[r] = function() {
+                            (l[r].q = l[r].q || []).push(arguments);
+                        }
+                        ,
+                        d.createElement(u));
+                        n.src = `https://livescore.webpu.sh/${c}/sdk.js`,
+                        n.async = !0,
+                        n.onload = e,
+                        t.parentNode.insertBefore(n, t);
+                    } catch (e) {
+                        console.log("Could not run the XtremePushObject script: ", e);
+                    }
+                }
+                ,
+                l.__loadPrebid = function(t) {
+                    var n = !1;
+
+                    try {
+                        l.PWT = {},
+                        setTimeout(function() {
+                            !n && t && t(),
+                            n = !0;
+                        }, 500),
+                        l.PWT.jsLoaded = function() {
+                            !n && t && t(),
+                            n = !0;
+                        }
+                        ;
+                        var e, o = 1024 < l.innerWidth, a = d.getElementsByTagName(u)[0], r = d.createElement(u), c = window.location.href, s = "//ads.pubmatic.com/AdServer/js/pwt/163386/" + (o ? "10601" : "10671"), i = "";
+                        0 < c.indexOf("pwtv=") && 2 <= (e = /pwtv=(.*?)(&|$)/g.exec(c)).length && 0 < e[1].length && (i = "/" + e[1]),
+                        r.async = !0,
+                        r.type = "text/javascript",
+                        r.src = s + i + "/pwt.js",
+                        r.onerror = function() {
+                            console.log("Could not load the Pubmatic script"),
+                            !n && t && t(),
+                            n = !0;
+                        }
+                        ,
+                        a.parentNode.insertBefore(r, a);
+                    } catch (e) {
+                        console.log("Could not run the Pubmatic script: ", e),
+                        !n && t && t(),
+                        n = !0;
+                    }
+                }
+                ,
+                l.__loadGPT = function(e) {
+                    try {
+                        var t = d.getElementsByTagName(u)[0]
+                          , n = d.createElement(u);
+                        n.src = "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+                        n.async = !0,
+                        n.onload = function() {
+                            l.ls.common.isGptScriptLoaded = !0,
+                            document.dispatchEvent(new CustomEvent(e));
+                        }
+                        ,
+                        t.parentNode.insertBefore(n, t);
+                    } catch (e) {
+                        console.log("Could not run the GPT script: ", e);
+                    }
+                }
+                ,
+                l.__loadAdsScripts = function(e, t) {
+                    function n() {
+                        l.__loadGPT(e);
+                    }
+
+                    t ? l.__loadPrebid(n) : n();
+                }
+                ;
+            }
+            )(window, document, 'script', 'dataLayer', 'GTM-MGW6C35', 'xtremepush', 'asRjAtD0D_B1IoCPpIUrMJ0YCmb75d_E');
+        </script>
+        <script type="text/plain" class="optanon-category-C0002">
+            (function categoryC0002(o) {
+  o.__loadGTM();
+})(window);
+        </script>
+        <script type="text/plain">
+            (function (w) {w.__loadXtremePushLibrary();})(window);
+        </script>
+        <meta name="apple-itunes-app" content="app-id=356928178"/>
+        <meta name="theme-color" content="#212121"/>
+        <link rel="manifest" href="/ls-web-assets/manifest-30a2085bee4d8dfdc62dd7e9bf4a6acf.json"/>
+        <link rel="icon" href="/ls-web-assets/images/favicon-eeef5f90971478b2edba81aad81dc424.ico"/>
+        <link rel="apple-touch-icon" href="/ls-web-assets/images/apple-touch-icon-ad400f79db6023afb3ac1cd39a100546.webp"/>
+        <link rel="apple-touch-icon-precomposed" href="/ls-web-assets/images/apple-touch-icon-precomposed-dff85ae0d1dc3c08acc942344a27db19.webp"/>
+        <link sizes="120x120" rel="apple-touch-icon" href="/ls-web-assets/images/apple-touch-icon-120x120-0c9677706b437eb2c68368de422d012f.webp"/>
+        <link sizes="120x120" rel="apple-touch-icon-precomposed" href="/ls-web-assets/images/apple-touch-icon-120x120-precomposed-1c6d64d757f5523195050a1d27e6a4c3.webp"/>
+        <link rel="android-touch-icon" href="/ls-web-assets/images/icon-100-1088b523b98febdc12fa9f9ccd929b34.webp"/>
+        <title>LiveScore | Live Football Scores, Fixtures &amp;Results</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, viewport-fit=cover"/>
+        <meta property="og:title" content="LiveScore | Live Football Scores, Fixtures &amp; Results"/>
+        <meta name="twitter:title" content="LiveScore | Live Football Scores, Fixtures &amp; Results"/>
+        <meta name="description" content="Get Live Football Scores and Real-Time Football Results with LiveScore! We cover all Countries, Leagues and Competitions in unbeatable detail. Click Now!"/>
+        <meta property="og:description" content="Get Live Football Scores and Real-Time Football Results with LiveScore! We cover all Countries, Leagues and Competitions in unbeatable detail. Click Now!"/>
+        <meta name="twitter:description" content="Get Live Football Scores and Real-Time Football Results with LiveScore! We cover all Countries, Leagues and Competitions in unbeatable detail. Click Now!"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://www.livescore.com/ls-web-assets/images/ico-app2-a6c954799a7b148cb1227a452ea5d96d.webp"/>
+        <meta property="og:url" content="https://www.livescore.com/en/"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="@livescore"/>
+        <meta name="twitter:image" content="https://www.livescore.com/ls-web-assets/images/ico-app2-a6c954799a7b148cb1227a452ea5d96d.webp"/>
+        <meta name="google-site-verification" content="dPd8zl3nAJkizJyu9E4yttUeMV9kYql3pTOLgCQN-OY"/>
+        <meta name="msvalidate.01" content="CD748CEAE850608AD71B3AACBB259E05"/>
+        <script id="organisationSchema" type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Livescore",
+                "legalName": "Livescore.com",
+                "url": "https://www.livescore.com",
+                "logo": "/ls-web-assets/images/icon-100-1088b523b98febdc12fa9f9ccd929b34.webp",
+                "foundingDate": "1998",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1st Floor, 10 Piccadilly",
+                    "addressLocality": "London",
+                    "postalCode": "W1J 0DD",
+                    "addressCountry": "UK"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/livescore",
+                    "https://www.instagram.com/livescore",
+                    "https://www.twitter.com/livescore",
+                    "https://www.linkedin.com/company/livescore"
+                ]
+            }</script>
+        <link rel="canonical" href="https://www.livescore.com/en/"/>
+        <link rel="alternate" href="https://www.livescore.com/en/" hrefLang="en"/>
+        <link rel="alternate" href="https://www.livescore.com/nl/" hrefLang="nl"/>
+        <link rel="alternate" href="https://www.livescore.com/es/" hrefLang="es"/>
+        <link rel="alternate" href="https://www.livescore.com/pt/" hrefLang="pt-br"/>
+        <link rel="preload" as="image" href="/ls-web-assets/svgs/common/livescore-logo-b3b211143dccd9e22d164701d32a390f.svg" fetchpriority="high"/>
+        <meta name="next-head-count" content="37"/>
+        <link rel="dns-prefetch preconnect" href="https://cdn-ukwest.onetrust.com"/>
+        <link rel="dns-prefetch preconnect" href="https://geo.livescore.com"/>
+        <style>
+            input::-webkit-credentials-auto-fill-button {
+                visibility: hidden;
+                display: none !important;
+                pointer-events: none;
+                position: absolute;
+                right: 0;
+            }
+        </style>
+        <link rel="preload" href="/ls-web-assets/fonts/roboto-regular-aa23b7b4bcf2b8f0e876106bb3de69c6.woff2" as="font" type="font/woff2" crossorigin=""/>
+        <link rel="preload" href="/ls-web-assets/fonts/roboto-bold-bf28241e67511184c14dbd0ef7d39f91.woff2" as="font" type="font/woff2" crossorigin=""/>
+        <script>
+            (function createGlobalNamespace(o, n, w) {
+                window.ls || (window.ls = {},
+                window.globalLs = {},
+                window.ls.env = n,
+                window.ls.version = w,
+                window.ls.buildId = o),
+                ["common", "config", "userInfo", "adsHelper"].forEach(function(o) {
+                    window.ls[o] || (window.ls[o] = {});
+                });
+            }
+            )('YJUSHGk8l7Aic4z1DXaLK', 'prod', '7.7.0-release-4622', )
+        </script>
+        <script id="langDict">
+            window.ls.langDict = {
+                "en": {
+                    "common": {
+                        "videos": "VIDEOS",
+                        "live": "Live",
+                        "search": "Search",
+                        "MsgEmailError": "There was an error sending your e-mail, please try again.",
+                        "tryAgain": "Try again",
+                        "downloadNow": "Download now",
+                        "lang": "Language",
+                        "tennis": "Tennis",
+                        "resultsOnly": "RO",
+                        "buildIdOutdated": "Please refresh your browser to get the latest version of LiveScore.com",
+                        "noFavouriteMatchesAvailable": "to add a Match to Favourites",
+                        "matches": "Matches",
+                        "euro": "Euro",
+                        "table": "Table",
+                        "copiedTooltip": "The link has been copied to clipboard",
+                        "pick6Pick6": "Pick 6",
+                        "predict": "PREDICT",
+                        "draws": "Draws",
+                        "fixtures": "Fixtures",
+                        "whatIsNew": "What’s New?",
+                        "alertsLabel": "Show alerts on:",
+                        "dynamicNews": "News",
+                        "mma": "MMA",
+                        "tomorrow": "Tomorrow",
+                        "cricket": "Cricket",
+                        "maxFavourites": "Max favourites reached",
+                        "date": "Date",
+                        "getUpdates": "Get instant notifications with the LiveScore app",
+                        "days": "days",
+                        "policy": "Privacy Notice",
+                        "wins": "Wins",
+                        "technicalErrorDescription": "Please try again later",
+                        "link": "Link",
+                        "facebookTitle": "Click to enable Facebook Like button",
+                        "back": "Back",
+                        "home": "Home",
+                        "losses": "Losses",
+                        "menu": "Menu",
+                        "reset": "Reset",
+                        "settings": "Settings",
+                        "joinNow": "Join Now",
+                        "close": "Close",
+                        "pick6Livescore": "LiveScore 6",
+                        "advertiser": "Sponsored",
+                        "tap": "Tap",
+                        "refresh": "Refresh",
+                        "open": "Open",
+                        "tvGuide": "TV Guide",
+                        "hockey": "Hockey",
+                        "correctScores": "CORRECT SCORES",
+                        "MsgErrFieldIsRequired": "This field is required!",
+                        "liveStream": "Live Streaming",
+                        "upNext": "UP NEXT",
+                        "login": "Log in",
+                        "share": "Share",
+                        "yes": "Yes",
+                        "soundsParagraph": "* Some mobile browsers require the sounds to be enabled manually every time the Live Notifier page is accessed.",
+                        "today": "Today",
+                        "selfExcludedMsg": "Your LiveScore experience reflects your Safer Gambling preferences.",
+                        "noMatchesAvailable": "There are no games available",
+                        "MsgEmailSentSuccessfully": "Your message was sent successfully.",
+                        "tags": "Tags",
+                        "loading": "Loading",
+                        "football": "Football",
+                        "playing": "PLAYING",
+                        "no": "No",
+                        "advertise": "Advertise",
+                        "round": "Round",
+                        "radioLabel2": "Favourites",
+                        "radioLabel3": "None",
+                        "radioLabel1": "All matches",
+                        "faq": "FAQ",
+                        "change-to-mobile-view": "Change to mobile view",
+                        "selfExcludedLink": "here.",
+                        "by": "By",
+                        "featuredNews": "Featured News",
+                        "ftp": "FREE TO PLAY",
+                        "tables": "Tables",
+                        "soundsLabel": "Play sounds for *:",
+                        "apply": "Apply",
+                        "seeAll": "See All",
+                        "noFavouriteCompetitionsAvailable": "to pin a Competition to the top of the Scores tab",
+                        "cancel": "Cancel",
+                        "basketball": "Basketball",
+                        "mobile": "Mobile",
+                        "change-to-desktop-view": "Change to desktop view",
+                        "international": "International",
+                        "facebookAlt": "Facebook Like button",
+                        "yesterday": "Yesterday",
+                        "install": "Install",
+                        "newLabel": "new",
+                        "news": "news",
+                        "bettingOffers": "Betting Offers",
+                        "lsTrademark": "© 1998-2021 LiveScore",
+                        "contact": "Contact",
+                        "notifierHeader": "Notifier page:",
+                        "searchByCountry": "Search by Country...",
+                        "MsgThankYou": "Thank you!",
+                        "MsgError": "Sorry!",
+                        "clubFriendlies": "Club Friendlies",
+                        "more": "More",
+                        "overview": "Overview",
+                        "results": "Results",
+                        "technicalError": "Sorry, a technical error occurred!",
+                        "installApp": "Install App",
+                        "noLiveGamesInProgress": "There are no live games currently in progress",
+                        "MsgErrFieldIsDigitsOnly": "Digits only",
+                        "and": "and",
+                        "favourites": "Favourites"
+                    },
+                    "footer": {
+                        "contact": "Contact",
+                        "corporate": "Corporate",
+                        "newsPublishers": "News Publishers",
+                        "title": "Live Sports Scores and Updates | LiveScore.com",
+                        "mobile": "Mobile",
+                        "careers": "Careers",
+                        "advertise": "Advertise",
+                        "termsOfUse": "Terms of Use",
+                        "faq": "Faq",
+                        "modernSlaveryStatement": "Modern Slavery Statement",
+                        "privacyNotice": "Privacy Notice",
+                        "cookiePolicy": "Cookie Policy"
+                    },
+                    "errors": {
+                        "jsDisabled-10": "to the latest version and",
+                        "jsDisabled-11": "check that Javascript and Cookies are enabled.",
+                        "jsDisabled-12": "Alternatively you can navigate to a legacy version of the website, which is compatible with older browsers:",
+                        "data-2": "error occurred while updating data.",
+                        "data-3": "It might be due to a ",
+                        "data-1": "An",
+                        "data-6": "automatically retry to download the data.",
+                        "data-7": "To force an immediate reload please refresh the page.",
+                        "data-4": "slow or failing network connection or a problem on the servers.",
+                        "data-5": "The website will ",
+                        "notification-1": "An",
+                        "notification-2": "error occurred while retrieving notifications.",
+                        "notification-3": "It might be due to a ",
+                        "notification-4": "slow or failing network connection or a problem on the servers.",
+                        "notification-5": "The website will ",
+                        "notification-6": "automatically retry to download all the notifications.",
+                        "jsDisabled-5": ", it may",
+                        "jsDisabled-6": "not display this website or some of its parts",
+                        "jsDisabled-7": "correctly.",
+                        "jsDisabled-8": "To make sure that all features of this website work, please",
+                        "jsDisabled-9": "update your browser",
+                        "jsDisabled-1": "Your browser is",
+                        "jsDisabled-2": "out of date",
+                        "jsDisabled-3": "or some of its",
+                        "jsDisabled-4": "features are disabled"
+                    },
+                    "search": {
+                        "popular": "Popular",
+                        "teams": "Teams",
+                        "country": "Country",
+                        "competitions": "Competitions",
+                        "region": "Region",
+                        "all": "All",
+                        "players": "Players",
+                        "noResultsFound": "No results found"
+                    },
+                    "menuItems": {
+                        "livescoreBetMobile": "LS Bet",
+                        "streaming": "Streaming",
+                        "advertise": "Advertise",
+                        "news": "News",
+                        "livescore6": "LiveScore 6",
+                        "download": "Get the app",
+                        "bet": "Bet",
+                        "favourites": "Favourites",
+                        "scores": "Scores",
+                        "mobile": "Mobile",
+                        "contact": "Contact"
+                    }
+                }
+            }
+        </script>
+        <link rel="preload" href="/_next/static/css/1391b49aa04580b1.css" as="style"/>
+        <link rel="stylesheet" href="/_next/static/css/1391b49aa04580b1.css" data-n-g=""/>
+        <link rel="preload" href="/_next/static/css/7af52cff36aa2396.css" as="style"/>
+        <link rel="stylesheet" href="/_next/static/css/7af52cff36aa2396.css" data-n-p=""/>
+        <link rel="preload" href="/_next/static/css/3e7e61c2f5be5483.css" as="style"/>
+        <link rel="stylesheet" href="/_next/static/css/3e7e61c2f5be5483.css"/>
+        <noscript data-n-css=""></noscript>
+        <script defer="" nomodule="" src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"></script>
+        <script defer="" src="/_next/static/chunks/2749.928bce3723eeb85e.js"></script>
+        <script src="/_next/static/chunks/webpack-a775a78df5632b9b.js" defer=""></script>
+        <script src="/_next/static/chunks/framework-e5b12c291073d220.js" defer=""></script>
+        <script src="/_next/static/chunks/main-c00f735e55679d8a.js" defer=""></script>
+        <script src="/_next/static/chunks/pages/_app-b13ce21ca20c6406.js" defer=""></script>
+        <script src="/_next/static/chunks/commons-41b4449dd60acf84.js" defer=""></script>
+        <script src="/_next/static/chunks/8410-ec3249c074a07a3b.js" defer=""></script>
+        <script src="/_next/static/chunks/pages/index-04f17ac7dd33eed0.js" defer=""></script>
+        <script src="/_next/static/YJUSHGk8l7Aic4z1DXaLK/_buildManifest.js" defer=""></script>
+        <script src="/_next/static/YJUSHGk8l7Aic4z1DXaLK/_ssgManifest.js" defer=""></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var initialSpinner = document.createElement('div');
+            var initialSpinnerChild = document.createElement('div');
+            initialSpinner.setAttribute("id", "initial-spinner");
+            initialSpinner.appendChild(initialSpinnerChild);
+            document.body.appendChild(initialSpinner);
+        </script>
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGW6C35" height="0" width="0" class="gtm" style="border:0"></iframe>
+        </noscript>
+        <div data-testid="livescoreinter" class="test" name="livescoreinter" id="livescoreinter"></div>
+        <div id="__next">
+            <div class="sc">
+                <div data-testid="spinner" class="H uc"></div>
+            </div>
+            <script>
+                (function trackConsentPreference(o, t) {
+                    var r = {
+                        performanceToggle: "C0002",
+                        accessToggle: "C0003",
+                        adsToggle: "C0004",
+                        personaliseToggle: "V2STACK42",
+                        storeInfoToggle: "IAB2V2_1",
+                        geoToggle: "ISF2V2_1",
+                        idToggle: "ISF2V2_2"
+                    };
+
+                    function a() {
+                        var e = OneTrust.GetDomainData()
+                          , n = {};
+                        if (e && e.ConsentIntegrationData && e.ConsentIntegrationData.consentPayload && e.ConsentIntegrationData.consentPayload.purposes && e.Groups)
+                            for (var o = e.ConsentIntegrationData.consentPayload.purposes, t = 0; t < e.Groups.length; t++) {
+                                var a = function(e, n) {
+                                    for (var o = 0; o < e.length; o++) {
+                                        var t = e[o].TransactionType;
+                                        if (e[o].Id === n)
+                                            return "OPT_OUT" !== t;
+                                    }
+
+                                    return !1;
+                                }(o, e.Groups[t].PurposeId);
+
+                                n[e.Groups[t].OptanonGroupId] || (n[e.Groups[t].OptanonGroupId] = a),
+                                e.Groups[t].Parent && (n[e.Groups[t].Parent] = n[e.Groups[t].Parent] || a);
+                            }
+                        return n;
+                    }
+
+                    function s(e) {
+                        var n = a();
+                        Object.keys(n).length && (n = function(e) {
+                            for (var n = {}, o = Object.keys(r), t = 0; t < Object.keys(r).length; t++) {
+                                var a = o[t];
+                                n[a] = e[r[a]];
+                            }
+
+                            return n;
+                        }(n),
+                        e && document.dispatchEvent(new CustomEvent(t,{
+                            detail: n
+                        })),
+                        e = n,
+                        document.dispatchEvent(new CustomEvent(o,{
+                            detail: {
+                                isAdsEnabled: e.adsToggle,
+                                isNpAdsEnabled: !e.personaliseToggle || !e.adsToggle,
+                                isAnalyticScriptsEnabled: !!e.performanceToggle
+                            }
+                        })));
+                    }
+
+                    window.OptanonWrapper = function() {
+                        var e, n;
+                        !0 === OneTrust.IsAlertBoxClosedAndValid() && (e = (n = window.__jsCookie.get("OptanonAlertBoxClosed")) && new Date() - new Date(n) < 5e3,
+                        setTimeout(function() {
+                            s(e);
+                        }, e ? 1e3 : 0));
+                    }
+                    ;
+                }
+                )('consentPreferenceLoad', 'consentPreferenceUpdate');
+            </script>
+            <script>
+                (function loadGeoIp(e, o, t) {
+                    function n(e) {
+                        var o = document.getElementsByTagName("BODY")[0];
+                        o.className += (o.className.length ? " " : "") + "user-iso-country-" + e.c.toLowerCase(),
+                        window.ls.userInfo.countryCode = e.c,
+                        window.ls.userInfo.countrySubDivision = e.sd;
+                    }
+
+                    var a;
+
+                    try {
+                        var r, s, c = localStorage.getItem(o);
+                        if (a = c && (s = (r = new Date(JSON.parse(c).updatedAt)).setHours(r.getHours() + t),
+                        Date.now() < s) ? JSON.parse(c).value : a)
+                            return void n(a);
+                    } catch (e) {}
+
+                    fetch(e).then(function(e) {
+                        e.ok ? e.json().then(function(e) {
+                            try {
+                                e && e.c || console.info("unable to detect geo IP", e),
+                                n(e),
+                                localStorage.setItem(o, JSON.stringify({
+                                    updatedAt: Date.now(),
+                                    value: e
+                                }));
+                            } catch (e) {
+                                console.error("unable to set geo IP", e);
+                            }
+                        }) : console.error("unable to fetch geo IP", e);
+                    });
+                }
+                )('https://geo.livescore.com/api/v1/location?sd=true', 'ls.geo', 24);
+            </script>
+            <div data-testid="livescore-app" id="__livescore">
+                <div id="header-ads-holder" class="ii"></div>
+                <div class="ge">
+                    <div class="he"></div>
+                </div>
+                <div id="content" class="T football header-scores">
+                    <div class="V" id="content-top-menu">
+                        <header class="Th" id="top-menu">
+                            <div class="Uh">
+                                <span id="burger-menu-open" class="Vh Xh">
+                                    <img alt="open menu" data-src="/ls-web-assets/svgs/common/hamburger-menu-9cad5b5ae1902e5639d4bc8339cd756f.svg" loading="lazy" width="14" height="14" decoding="async" data-nimg="1" style="color:transparent" src="/ls-web-assets/svgs/common/hamburger-menu-9cad5b5ae1902e5639d4bc8339cd756f.svg"/>
+                                </span>
+                                <a data-testid="logo_top-menu-logo-link" href="/en/">
+                                    <span class="Sp">
+                                        <img alt="livescore" fetchpriority="high" width="104" height="19" decoding="async" data-nimg="1" style="color:transparent;background-size:cover;background-position:50% 50%;background-repeat:no-repeat;background-image:url(&quot;data:image/svg+xml;charset=utf-8,%3Csvg xmlns=&#x27;http%3A//www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 104 19&#x27;%3E%3Cfilter id=&#x27;b&#x27; color-interpolation-filters=&#x27;sRGB&#x27;%3E%3CfeGaussianBlur stdDeviation=&#x27;20&#x27;/%3E%3C/filter%3E%3Cimage preserveAspectRatio=&#x27;none&#x27; filter=&#x27;url(%23b)&#x27; x=&#x27;0&#x27; y=&#x27;0&#x27; height=&#x27;100%25&#x27; width=&#x27;100%25&#x27; href=&#x27;data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=&#x27;/%3E%3C/svg%3E&quot;)" src="/ls-web-assets/svgs/common/livescore-logo-b3b211143dccd9e22d164701d32a390f.svg"/>
+                                    </span>
+                                </a>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="U">
+                        <div id="content-columns" class="W">
+                            <div class="X">
+                                <div class="qc">
+                                    <div class="eh" id="horizontal-navigation-container">
+                                        <div class="ch dh" id="horizontal-navigation-outer">
+                                            <div id="horizontal-navigation-wrapper" class="hh">
+                                                <span>
+                                                    <a class="ih" id="football-pill" href="/en/">Football</a>
+                                                </span>
+                                                <span>
+                                                    <a class="" id="hockey-pill" href="/en/hockey/">Hockey</a>
+                                                </span>
+                                                <span>
+                                                    <a class="" id="basketball-pill" href="/en/basketball/">Basketball</a>
+                                                </span>
+                                                <span>
+                                                    <a class="" id="tennis-pill" href="/en/tennis/">Tennis</a>
+                                                </span>
+                                                <span>
+                                                    <a class="" id="cricket-pill" href="/en/cricket/">Cricket</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="Y" id="content-left">
+                                        <div class="Ac" id="content-left">
+                                            <div class="ui">
+                                                <img alt="search" loading="lazy" width="18" height="18" decoding="async" data-nimg="1" style="color:transparent" src="/ls-web-assets/svgs/common/mobile-search-2b729ef15856930595249a3c2bab7161.svg"/>
+                                                <input data-testid="search_modal-input" type="text" placeholder="Search" maxLength="20" minLength="2" value=""/>
+                                            </div>
+                                            <div class="Oi">
+                                                <div class="o p">
+                                                    <div data-testid="spinner" class="H"></div>
+                                                </div>
+                                                <div class="Pi" data-testid="search_region-section">
+                                                    <div class="Qi aj" data-testid="search_region-section_header">
+                                                        Region
+                                                        <svg viewBox="0 0 11 32" class="Ri">
+                                                            <path d="M10.65 16.99q0 .23-.18.41l-8.34 8.34q-.18.18-.41.18t-.41-.18l-.9-.9q-.18-.18-.18-.4t.18-.42l7.03-7.03L.41 9.96q-.18-.18-.18-.42t.18-.4l.9-.9q.17-.18.4-.18t.42.18l8.34 8.33q.18.18.18.42z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="Si Ti">
+                                                        <div class="Ui">
+                                                            <div class="dj">
+                                                                <img alt="Euro 2024" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:contain;color:transparent" src="https://static.livescore.com/i2/fh/euro-2024.jpg"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Wi">
+                                                            <div class="Yi">Euro 2024</div>
+                                                            <div class="Xi"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Si Ti">
+                                                        <div class="Ui">
+                                                            <div class="dj">
+                                                                <img alt="Copa America" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:contain;color:transparent" src="https://static.livescore.com/i2/fh/copa-america.jpg"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Wi">
+                                                            <div class="Yi">Copa America</div>
+                                                            <div class="Xi"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Si Ti">
+                                                        <div class="Ui">
+                                                            <div class="dj">
+                                                                <img alt="England" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:contain;color:transparent" src="https://static.livescore.com/i2/fh/england.jpg"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Wi">
+                                                            <div class="Yi">England</div>
+                                                            <div class="Xi"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Si Ti">
+                                                        <div class="Ui">
+                                                            <div class="dj">
+                                                                <img alt="Champions League" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:contain;color:transparent" src="https://static.livescore.com/i2/fh/champions-league.jpg"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Wi">
+                                                            <div class="Yi">Champions League</div>
+                                                            <div class="Xi"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Si Ti">
+                                                        <div class="Ui">
+                                                            <div class="dj">
+                                                                <img alt="Spain" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:contain;color:transparent" src="https://static.livescore.com/i2/fh/spain.jpg"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Wi">
+                                                            <div class="Yi">Spain</div>
+                                                            <div class="Xi"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Pi" data-testid="search_teams-section">
+                                                    <div class="Qi aj" data-testid="search_teams-section_header">
+                                                        Teams
+                                                        <svg viewBox="0 0 11 32" class="Ri">
+                                                            <path d="M10.65 16.99q0 .23-.18.41l-8.34 8.34q-.18.18-.41.18t-.41-.18l-.9-.9q-.18-.18-.18-.4t.18-.42l7.03-7.03L.41 9.96q-.18-.18-.18-.42t.18-.4l.9-.9q.17-.18.4-.18t.42.18l8.34 8.33q.18.18.18.42z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <a href="/en/football/team/england/9267/overview/">
+                                                        <div class="Si Ti">
+                                                            <div class="Ui">
+                                                                <img alt="England" loading="lazy" width="18" height="18" decoding="async" data-nimg="1" style="color:transparent" src="https://lsm-static-prod.livescore.com/medium/enet/8491.png"/>
+                                                            </div>
+                                                            <div class="Wi">
+                                                                <div class="Yi">England</div>
+                                                                <div class="Xi">England</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="/en/football/team/france/9179/overview/">
+                                                        <div class="Si Ti">
+                                                            <div class="Ui">
+                                                                <img alt="France" loading="lazy" width="18" height="18" decoding="async" data-nimg="1" style="color:transparent" src="https://lsm-static-prod.livescore.com/medium/enet/6723.png"/>
+                                                            </div>
+                                                            <div class="Wi">
+                                                                <div class="Yi">France</div>
+                                                                <div class="Xi">France</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="/en/football/team/germany/9016/overview/">
+                                                        <div class="Si Ti">
+                                                            <div class="Ui">
+                                                                <img alt="Germany" loading="lazy" width="18" height="18" decoding="async" data-nimg="1" style="color:transparent" src="https://lsm-static-prod.livescore.com/medium/enet/8570.png"/>
+                                                            </div>
+                                                            <div class="Wi">
+                                                                <div class="Yi">Germany</div>
+                                                                <div class="Xi">Germany</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="/en/football/team/argentina/9100/overview/">
+                                                        <div class="Si Ti">
+                                                            <div class="Ui">
+                                                                <img alt="Argentina" loading="lazy" width="18" height="18" decoding="async" data-nimg="1" style="color:transparent" src="https://lsm-static-prod.livescore.com/medium/teambadge/argentina-2024.png"/>
+                                                            </div>
+                                                            <div class="Wi">
+                                                                <div class="Yi">Argentina</div>
+                                                                <div class="Xi">Argentina</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="/en/football/team/brazil/9010/overview/">
+                                                        <div class="Si Ti">
+                                                            <div class="Ui">
+                                                                <img alt="Brazil" loading="lazy" width="18" height="18" decoding="async" data-nimg="1" style="color:transparent" src="https://lsm-static-prod.livescore.com/medium/enet/8256.png"/>
+                                                            </div>
+                                                            <div class="Wi">
+                                                                <div class="Yi">Brazil</div>
+                                                                <div class="Xi">Brazil</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="Pi" data-testid="search_competitions-section">
+                                                    <div class="Qi aj" data-testid="search_competitions-section_header">
+                                                        Competitions
+                                                        <svg viewBox="0 0 11 32" class="Ri">
+                                                            <path d="M10.65 16.99q0 .23-.18.41l-8.34 8.34q-.18.18-.41.18t-.41-.18l-.9-.9q-.18-.18-.18-.4t.18-.42l7.03-7.03L.41 9.96q-.18-.18-.18-.42t.18-.4l.9-.9q.17-.18.4-.18t.42.18l8.34 8.33q.18.18.18.42z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <a href="/en/football/euro-2024/group-a/">
+                                                        <div class="Si Ti">
+                                                            <div class="Ui">
+                                                                <div class="dj">
+                                                                    <img alt="Euro 2024" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:contain;color:transparent" src="https://static.livescore.com/i2/fh/euro-2024.jpg"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Wi">
+                                                                <div class="Yi">Euro 2024</div>
+                                                                <div class="Xi">Europe</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="/en/football/copa-america/group-a/">
+                                                        <div class="Si Ti">
+                                                            <div class="Ui">
+                                                                <div class="dj">
+                                                                    <img alt="Copa America" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:contain;color:transparent" src="https://static.livescore.com/i2/fh/copa-america.jpg"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Wi">
+                                                                <div class="Yi">Copa America</div>
+                                                                <div class="Xi">CONMEBOL</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="/en/football/england/premier-league/">
+                                                        <div class="Si Ti">
+                                                            <div class="Ui">
+                                                                <div class="dj">
+                                                                    <img alt="Premier League" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:contain;color:transparent" src="https://static.livescore.com/i2/fh/england.jpg"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Wi">
+                                                                <div class="Yi">Premier League</div>
+                                                                <div class="Xi">England</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="/en/football/champions-league/final/">
+                                                        <div class="Si Ti">
+                                                            <div class="Ui">
+                                                                <div class="dj">
+                                                                    <img alt="Champions League" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:contain;color:transparent" src="https://static.livescore.com/i2/fh/champions-league.jpg"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Wi">
+                                                                <div class="Yi">Champions League</div>
+                                                                <div class="Xi">UEFA</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="/en/football/spain/laliga/">
+                                                        <div class="Si Ti">
+                                                            <div class="Ui">
+                                                                <div class="dj">
+                                                                    <img alt="LaLiga" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:contain;color:transparent" src="https://static.livescore.com/i2/fh/spain.jpg"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Wi">
+                                                                <div class="Yi">LaLiga</div>
+                                                                <div class="Xi">Spain</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="content-center" class="ba threeColumns">
+                                        <noscript>
+                                            <div>
+                                                <div class="Cg">
+                                                    <div>
+                                                        <p class="c">
+                                                            Your browser is
+                                                            <!-- -->
+                                                            <strong>out of date
+                                                            <!-- -->
+                                                            </strong>
+                                                            or some of its
+                                                            <!-- -->
+                                                            <strong>
+                                                            <!-- -->
+                                                            features are disabled</strong>
+                                                            , it may
+                                                            <!-- -->
+                                                            <strong>not display this website or some of its parts
+                                                            <!-- -->
+                                                            </strong>
+                                                            correctly.
+                                                        </p>
+                                                        <br/>
+                                                        <p class="c">
+                                                            To make sure that all features of this website work, please
+                                                            <!-- -->
+                                                            <strong>update your browser
+                                                            <!-- -->
+                                                            </strong>
+                                                            to the latest version and
+                                                            <!-- -->
+                                                            <strong>
+                                                            <!-- -->
+                                                            check that Javascript and Cookies are enabled.</strong>
+                                                        </p>
+                                                        <br/>
+                                                        <p class="c">
+                                                            Alternatively you can navigate to a legacy version of the website, which is compatible with older browsers:
+                                                            <!-- -->
+                                                            <a href="https://www.livescores.com">https://www.livescores.com</a>
+                                                        </p>
+                                                    </div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </noscript>
+                                        <div class="Nf" id="match-rows_calendar">
+                                            <div class="sf">
+                                                <span class="vf">
+                                                    <a data-testid="match-calendar-live" href="/en/football/live/">
+                                                        <div class="">
+                                                            <img alt="Live" loading="lazy" width="30" height="20" decoding="async" data-nimg="1" style="color:transparent" src="/ls-web-assets/svgs/common/live-0c42a2dafa221e65966f71da84877f00.svg"/>
+                                                        </div>
+                                                    </a>
+                                                </span>
+                                                <div class="Af">
+                                                    <a data-testid="0__match-calendar-link" class="tf Qf If" href="/en/football/2024-06-16/">
+                                                        <span class="Gf">SUN</span>
+                                                        <span class="Ff Gf">16 JUN</span>
+                                                    </a>
+                                                    <a data-testid="1__match-calendar-link" class="tf Qf If" href="/en/football/2024-06-17/">
+                                                        <span class="Gf">MON</span>
+                                                        <span class="Ff Gf">17 JUN</span>
+                                                    </a>
+                                                    <a data-testid="2__match-calendar-link-active" class="tf Qf If" href="/en/">
+                                                        <span class="Gf yf">Today</span>
+                                                        <span class="Ff Gf yf">18 JUN</span>
+                                                    </a>
+                                                    <a data-testid="3__match-calendar-link" class="tf Qf If" href="/en/football/2024-06-19/">
+                                                        <span class="Gf">WED</span>
+                                                        <span class="Ff Gf">19 JUN</span>
+                                                    </a>
+                                                    <a data-testid="4__match-calendar-link" class="tf Qf If" href="/en/football/2024-06-20/">
+                                                        <span class="Gf">THU</span>
+                                                        <span class="Ff Gf">20 JUN</span>
+                                                    </a>
+                                                </div>
+                                                <div class="Pf" id="match-calendar-dp-trigger">
+                                                    <img alt="calendar" loading="lazy" width="18" height="18" decoding="async" data-nimg="1" style="color:transparent" src="/ls-web-assets/svgs/common/calendar-62a86ad26c51fe49ea1c6abb202a15b4.svg"/>
+                                                </div>
+                                            </div>
+                                            <div class="Mf"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Z" id="content-right">
+                                <div class="da" id="content-right">
+                                    <div class="De Ee"></div>
+                                    <div class="De"></div>
+                                    <div class="Fe"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content-sticky-footer" class="gi"></div>
+                    </div>
+                    <div class="Cc" id="footer-wrapper">
+                        <h1 class="Dc" id="footer-h1">LiveScore -  Latest Football Scores, Results, Fixtures and Tables</h1>
+                        <h2 class="Ec" id="footer-h2"></h2>
+                        <div class="Fc" id="footer-meta">
+                            The number one destination for real time scores for Football, <a href="/en/cricket/">Cricket</a>
+                            , <a href="/en/tennis/">Tennis</a>
+                            , <a href="/en/basketball/">Basketball</a>
+                            , <a href="/en/hockey/">Hockey</a>
+                            and <a href="/en/best-betting-sites/">Betting sites</a>
+                            comparisons. <a href="/en/">LiveScore.com</a>
+                            is the go-to destination for latest football scores and <a href="/en/news/">news</a>
+                            from around the world. <br/>
+                            Up to date tables, fixtures and scores from all the major leagues and competitions throughout the world live as they happen including the <a href="/en/football/england/premier-league/">Premier League</a>
+                            , <a href="/en/football/spain/laliga-santander/">La Liga</a>
+                            , <a href="/en/football/italy/serie-a/">Serie A</a>
+                            , <a href="/en/football/germany/bundesliga/">Bundesliga</a>
+                            , <a href="/en/football/france/ligue-1/">Ligue 1</a>
+                            and Europe’s biggest competitions such as the Champions League and Europa League. <br/>
+                            That’s not all because domestic cup competitions including the world famous <a href="/en/football/england/fa-cup-final/">FA Cup</a>
+                            and international tournaments such as the World Cup, Euros, AFCON, Copa America and Nations League are also at your fingertips. With match info and line-ups thrown into the mix, you need not look anywhere else for football statistics.
+                        </div>
+                        <div class="Gc" id="footer-copyright">© 1998-
+                        <!-- -->
+                        2024
+                        <!-- -->
+                        LiveScore Limited</div>
+                        <div id="footer-links">
+                            <span class="ie je" id="footer-link-footer.careers">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.livescoregroup.com/careers">
+                                    <span class="ke" id="footer-link-label">Careers</span>
+                                </a>
+                            </span>
+                            <span class="ie je" id="footer-link-footer.mobile">
+                                <a href="/en/mobile/">
+                                    <span class="ke" id="footer-link-label">Mobile</span>
+                                </a>
+                            </span>
+                            <span class="ie je" id="footer-link-footer.advertise">
+                                <a target="_blank" rel="noopener noreferrer" href="https://livescoregroup.com/advertise/">
+                                    <span class="ke" id="footer-link-label">Advertise</span>
+                                </a>
+                            </span>
+                            <span class="ie je" id="footer-link-footer.faq">
+                                <a target="_blank" rel="noopener noreferrer" href="https://help.livescore.com/hc/en-gb">
+                                    <span class="ke" id="footer-link-label">Faq</span>
+                                </a>
+                            </span>
+                            <span class="ie je" id="footer-link-footer.contact">
+                                <a href="/en/contact/">
+                                    <span class="ke" id="footer-link-label">Contact</span>
+                                </a>
+                            </span>
+                            <span class="ie je" id="footer-link-footer.newsPublishers">
+                                <a href="/en/news/publishers/">
+                                    <span class="ke" id="footer-link-label">News Publishers</span>
+                                </a>
+                            </span>
+                            <span class="ie je" id="footer-link-footer.privacyNotice">
+                                <a href="/en/policy/">
+                                    <span class="ke" id="footer-link-label">Privacy Notice</span>
+                                </a>
+                            </span>
+                            <span class="ie je" id="footer-link-footer.cookiePolicy">
+                                <a href="/en/cookies/">
+                                    <span class="ke" id="footer-link-label">Cookie Policy</span>
+                                </a>
+                            </span>
+                            <span class="ie je" id="footer-link-footer.termsOfUse">
+                                <a href="/en/terms/">
+                                    <span class="ke" id="footer-link-label">Terms of Use</span>
+                                </a>
+                            </span>
+                            <span class="ie je" id="footer-link-footer.modernSlaveryStatement">
+                                <a href="/en/slavery-act/">
+                                    <span class="ke" id="footer-link-label">Modern Slavery Statement</span>
+                                </a>
+                            </span>
+                            <span class="ie je" id="footer-link-footer.corporate">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.livescoregroup.com/">
+                                    <span class="ke" id="footer-link-label">Corporate</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="burger-menu">
+                    <div id="burger-menu-mask" class="Wb"></div>
+                    <div id="burger-menu-body" class="Xb">
+                        <div class="Zb" id="burger-menu-sections">
+                            <div class="bc">
+                                <img alt="livescore logo" id="burger-menu_top-menu-outlined" loading="lazy" width="107" height="18" decoding="async" data-nimg="1" style="color:transparent;background-size:cover;background-position:50% 50%;background-repeat:no-repeat;background-image:url(&quot;data:image/svg+xml;charset=utf-8,%3Csvg xmlns=&#x27;http%3A//www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 107 18&#x27;%3E%3Cfilter id=&#x27;b&#x27; color-interpolation-filters=&#x27;sRGB&#x27;%3E%3CfeGaussianBlur stdDeviation=&#x27;20&#x27;/%3E%3C/filter%3E%3Cimage preserveAspectRatio=&#x27;none&#x27; filter=&#x27;url(%23b)&#x27; x=&#x27;0&#x27; y=&#x27;0&#x27; height=&#x27;100%25&#x27; width=&#x27;100%25&#x27; href=&#x27;data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=&#x27;/%3E%3C/svg%3E&quot;)" src="/ls-web-assets/svgs/common/livescore-logo-b3b211143dccd9e22d164701d32a390f.svg"/>
+                                <span>
+                                    <img alt="Close button" id="burger-menu_close-button" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="fc" style="color:transparent" src="/ls-web-assets/images/close-23b5358e55b7af37c1a12881e8f6745d.svg"/>
+                                </span>
+                            </div>
+                            <a href="/en/settings/" class="dc">
+                                <span>Settings</span>
+                            </a>
+                            <a href="https://help.livescore.com/hc/en-gb/categories/4593251745938-What-s-New" target="_blank" rel="noreferrer" class="dc">
+                                <span>What’s New?</span>
+                            </a>
+                            <a class="dc" href="/en/best-betting-sites/">
+                                <span>Betting Offers</span>
+                            </a>
+                            <a href="https://help.livescore.com/hc/en-gb" target="_blank" rel="noreferrer" class="dc">
+                                <span>FAQ</span>
+                            </a>
+                            <a href="/en/contact/" class="dc">
+                                <span>Contact</span>
+                            </a>
+                            <a href="https://livescoregroup.com/advertise/" target="_blank" rel="noopener noreferrer" class="dc">
+                                <span>Advertise</span>
+                            </a>
+                            <a href="/en/mobile/" class="dc">
+                                <span>Mobile</span>
+                            </a>
+                            <a href="/en/policy/" class="dc">
+                                <span>Privacy Notice</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script id="__NEXT_DATA__" type="application/json">
+            {
+                "props": {
+                    "pageProps": {
+                        "layoutContext": {
+                            "leftMenuLinks": {
+                                "football": {
+                                    "teams": [
+                                        [
+                                            "9267",
+                                            "England",
+                                            "England",
+                                            "",
+                                            "enet/8491.png"
+                                        ],
+                                        [
+                                            "9179",
+                                            "France",
+                                            "France",
+                                            "",
+                                            "enet/6723.png"
+                                        ],
+                                        [
+                                            "9016",
+                                            "Germany",
+                                            "Germany",
+                                            "",
+                                            "enet/8570.png"
+                                        ],
+                                        [
+                                            "9100",
+                                            "Argentina",
+                                            "Argentina",
+                                            "",
+                                            "teambadge/argentina-2024.png"
+                                        ],
+                                        [
+                                            "9010",
+                                            "Brazil",
+                                            "Brazil",
+                                            "",
+                                            "enet/8256.png"
+                                        ]
+                                    ],
+                                    "stages": [
+                                        [
+                                            "15705",
+                                            "Euro 2024",
+                                            "Europe",
+                                            "euro-2024/group-a/",
+                                            "euro-2024"
+                                        ],
+                                        [
+                                            "16291",
+                                            "Copa America",
+                                            "CONMEBOL",
+                                            "copa-america/group-a/",
+                                            "copa-america"
+                                        ],
+                                        [
+                                            "18173",
+                                            "Premier League",
+                                            "England",
+                                            "england/premier-league/",
+                                            "england"
+                                        ],
+                                        [
+                                            "16431",
+                                            "Champions League",
+                                            "UEFA",
+                                            "champions-league/final/",
+                                            "champions-league"
+                                        ],
+                                        [
+                                            "18176",
+                                            "LaLiga",
+                                            "Spain",
+                                            "spain/laliga/",
+                                            "spain"
+                                        ]
+                                    ],
+                                    "categories": [
+                                        [
+                                            "570",
+                                            "Euro 2024",
+                                            "euro-2024",
+                                            "",
+                                            ""
+                                        ],
+                                        [
+                                            "296",
+                                            "Copa America",
+                                            "copa-america",
+                                            "",
+                                            ""
+                                        ],
+                                        [
+                                            "34",
+                                            "England",
+                                            "england",
+                                            "",
+                                            ""
+                                        ],
+                                        [
+                                            "130",
+                                            "Champions League",
+                                            "champions-league",
+                                            "",
+                                            ""
+                                        ],
+                                        [
+                                            "195",
+                                            "Spain",
+                                            "spain",
+                                            "",
+                                            ""
+                                        ]
+                                    ]
+                                }
+                            },
+                            "activeHeaderId": "scores",
+                            "newsListId": "2021012712572069509",
+                            "isHorizontalNavigationVisible": true,
+                            "announcementBannerPage": "scores",
+                            "meta": {
+                                "organisationSchema": true
+                            }
+                        },
+                        "adsTargeting": {
+                            "category": "home",
+                            "adUnitPathName": "home",
+                            "mpuUnitPathNames": [
+                                "homePageMpu",
+                                "homePageMpu2"
+                            ],
+                            "screen": "Scores"
+                        },
+                        "rootLink": "/en/",
+                        "activeSport": "football",
+                        "segmentTracking": {
+                            "screenClass": "list",
+                            "screenName": "Home"}
+                        },
+                        "meta": {
+                            "title": "LiveScore | Live Football Scores, Fixtures \u0026 Results",
+                            "description": "Get Live Football Scores and Real-Time Football Results with LiveScore! We cover all Countries, Leagues and Competitions in unbeatable detail. Click Now!",
+                            "h1": "LiveScore -  Latest Football Scores, Results, Fixtures and Tables",
+                            "h2": null,
+                            "footer": "The number one destination for real time scores for Football, \u003ca href=\"/%lang%/cricket/\"\u003eCricket\u003c/a\u003e, \u003ca href=\"/%lang%/tennis/\"\u003eTennis\u003c/a\u003e, \u003ca href=\"/%lang%/basketball/\"\u003eBasketball\u003c/a\u003e, \u003ca href=\"/%lang%/hockey/\"\u003eHockey\u003c/a\u003e and \u003ca href=\"/%lang%/best-betting-sites/\"\u003eBetting sites\u003c/a\u003e comparisons. \u003ca href=\"/%lang%/\"\u003eLiveScore.com\u003c/a\u003e is the go-to destination for latest football scores and \u003ca href=\"/%lang%/news/\"\u003enews\u003c/a\u003e from around the world. \u003cbr /\u003e Up to date tables, fixtures and scores from all the major leagues and competitions throughout the world live as they happen including the \u003ca href=\"/%lang%/football/england/premier-league/\"\u003ePremier League\u003c/a\u003e, \u003ca href=\"/%lang%/football/spain/laliga-santander/\"\u003eLa Liga\u003c/a\u003e, \u003ca href=\"/%lang%/football/italy/serie-a/\"\u003eSerie A\u003c/a\u003e, \u003ca href=\"/%lang%/football/germany/bundesliga/\"\u003eBundesliga\u003c/a\u003e, \u003ca href=\"/%lang%/football/france/ligue-1/\"\u003eLigue 1\u003c/a\u003e and Europe’s biggest competitions such as the Champions League and Europa League. \u003cbr /\u003e That’s not all because domestic cup competitions including the world famous \u003ca href=\"/%lang%/football/england/fa-cup-final/\"\u003eFA Cup\u003c/a\u003e and international tournaments such as the World Cup, Euros, AFCON, Copa America and Nations League are also at your fingertips. With match info and line-ups thrown into the mix, you need not look anywhere else for football statistics.",
+                            "alternativeLinks": {
+                                "en": "https://www.livescore.com/en/",
+                                "nl": "https://www.livescore.com/nl/",
+                                "pt": "https://www.livescore.com/pt/",
+                                "es": "https://www.livescore.com/es/"
+                            }
+                        },
+                        "pageId": "0938c1fb-ec17-4c94-a905-f95846083a74",
+                        "generated": 1718719261262,
+                        "externalAppConfig": {
+                            "logs": {
+                                "level": "info"
+                            },
+                            "localization": {
+                                "locales": [
+                                    "en",
+                                    "nl",
+                                    "pt",
+                                    "es"
+                                ],
+                                "translationTimestamp": "1715865178"
+                            },
+                            "blockedServicesUrls": {
+                                "PUBLIC_API_URL": "https://prod-public-api.lsmedia1.com",
+                                "PUBLIC_MEDIA_API_URL": "https://media-api.lsmedia1.com",
+                                "PUBLIC_FAVOURITES_API_URL": "https://favorites-api.lsmedia1.com",
+                                "PUBLIC_TEAMS_API_URL": "https://team-api.lsmedia1.com",
+                                "PUBLIC_COMMENTARY_API_URL": "https://commentary-api.lsmedia1.com",
+                                "PUBLIC_SEARCH_API_URL": "https://search-api.lsmedia1.com",
+                                "PUBLIC_GEO_API_URL": "https://geo.lsmedia1.com",
+                                "PUBLIC_BADGES_HIGH_RES_BUCKET_URL": "https://lsm-static-prod.lsmedia1.com/high/",
+                                "PUBLIC_BADGES_MEDIUM_RES_BUCKET_URL": "https://lsm-static-prod.lsmedia1.com/medium/",
+                                "PUBLIC_FLAGS_API_URL": "https://static.lsmedia1.com/i2/fh/",
+                                "PUBLIC_SEGMENT_CONFIG_URL": "https://mobile-cfg.lsmedia1.com/external/media/analytics_config/web_livescore/1/analytics_config.json"
+                            },
+                            "ftp": {
+                                "currencyMapping": {
+                                    "GB": "GBP",
+                                    "IE": "EUR"
+                                },
+                                "incentiveProvider": {
+                                    "enabled": true,
+                                    "countries": [
+                                        "GB",
+                                        "IE"
+                                    ],
+                                    "user": [
+                                        "isAdult",
+                                        "notSelfExcluded"
+                                    ]
+                                },
+                                "e2Provider": {
+                                    "enabled": true,
+                                    "allowedSubdivisionCodes": [
+                                        "ON"
+                                    ],
+                                    "countries": [
+                                        "VN"
+                                    ],
+                                    "user": [
+                                        "isAdult",
+                                        "notSelfExcluded"
+                                    ]
+                                },
+                                "sevTab": {
+                                    "enabled": true,
+                                    "countries": [
+                                        "VN",
+                                        "GB",
+                                        "IE"
+                                    ],
+                                    "user": [
+                                        "isAdult",
+                                        "notSelfExcluded"
+                                    ]
+                                },
+                                "icon": "livescore_6",
+                                "icon_active": "livescore_6_active",
+                                "title": "LiveScore 6",
+                                "slug": "livescore-6",
+                                "widget": [
+                                    {
+                                        "enabled": true,
+                                        "countries": [
+                                            "GB"
+                                        ],
+                                        "content": {
+                                            "notice": "PREDICT 6 SCORES, WIN UP TO\u003cbr/\u003e £250,000*",
+                                            "countdownText": "Round closes in",
+                                            "tcText": "18+ UK and IRE res. only. Enter by 2pm (UK) Thursday. T\u0026Cs apply",
+                                            "buttonText": "Play"
+                                        }
+                                    },
+                                    {
+                                        "enabled": true,
+                                        "countries": [
+                                            "IE"
+                                        ],
+                                        "content": {
+                                            "notice": "PREDICT 6 SCORES, WIN UP TO\u003cbr/\u003e €250,000*",
+                                            "countdownText": "Round closes in",
+                                            "tcText": "18+ UK and IRE res. only. Enter by 2pm (UK) Thursday. T\u0026Cs apply",
+                                            "buttonText": "Play"
+                                        }
+                                    },
+                                    {
+                                        "enabled": false,
+                                        "countries": [
+                                            "CA"
+                                        ],
+                                        "content": {
+                                            "notice": "PREDICT 6 SCORES, WIN UP TO\u003cbr/\u003e $170,000",
+                                            "countdownText": "Round closes in",
+                                            "tcText": "*T\u0026Cs apply. Read \u0026lsquo;How to Play\u0026rsquo; for prize breakdown",
+                                            "buttonText": "Play"
+                                        }
+                                    },
+                                    {
+                                        "enabled": false,
+                                        "countries": [
+                                            "MY"
+                                        ],
+                                        "content": {
+                                            "notice": "PREDICT 6 SCORES,\u003cbr/\u003eWIN UP TO RM 600,000",
+                                            "countdownText": "Round closes in",
+                                            "tcText": "*T\u0026Cs apply. Read \u0026lsquo;How to Play\u0026rsquo; for prize breakdown",
+                                            "buttonText": "Play"
+                                        }
+                                    },
+                                    {
+                                        "enabled": true,
+                                        "countries": [
+                                            "VN"
+                                        ],
+                                        "content": {
+                                            "notice": "PREDICT 6 SCORES,\u003cbr/\u003eWIN TO UP VND 3,000,000,000",
+                                            "countdownText": "Round closes in",
+                                            "tcText": "*T\u0026Cs apply. Read \u0026lsquo;How to Play\u0026rsquo; for prize breakdown",
+                                            "buttonText": "Play"
+                                        }
+                                    }
+                                ],
+                                "oddsWidgets": [
+                                    {
+                                        "enabled": true,
+                                        "countries": [
+                                            "GB"
+                                        ],
+                                        "drawImageUrl": "https://static.livescore.com/common/draw-icon.png",
+                                        "actionLink": {
+                                            "desktop": "https://www.livescorebet.com/uk/dl/addtobetslip?selectionIds={selectionIds}\u0026stake={stake}\u0026betType={betType}\u0026bonusCode={bonusCode}\u0026lsm_click_id={lsmClickId}\u0026lsm_aid={lsmAId}\u0026platform={platform}\u0026medium={medium}\u0026feature={feature}\u0026campaign={campaign}\u0026btag={btag}",
+                                            "mobile": "https://livescorebetuk.onelink.me/YgqL?pid=Convergence\u0026c={bannerId}\u0026af_dp=livescorebetuk%3A%2F%2Faddtobetslip%3FselectionIds%3D{selectionIds}%26stake%3D{stake}%26betType%3D{betType}%26bonusCode%3D{bonusCode}%26lsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}\u0026af_android_url=https%3A%2F%2Flivescorebet.com%2Fuk%2Fdl%2Faddtobetslip%3FselectionIds%3D{selectionIds}%26stake%3D{stake}%26betType%3D{betType}%26bonusCode%3D{bonusCode}%26lsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}\u0026af_ios_url=https%3A%2F%2Flivescorebet.com%2Fuk%2Fdl%2Faddtobetslip%3FselectionIds%3D{selectionIds}%26stake%3D{stake}%26betType%3D{betType}%26bonusCode%3D{bonusCode}%26lsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}"
+                                        },
+                                        "stake": "10.00",
+                                        "bannerId": "c_LS6_odds_web_UK",
+                                        "bonus": "40",
+                                        "bonusCode": "82926,82706",
+                                        "currency": "GBP",
+                                        "marketType": "1001159858",
+                                        "handicap": "0",
+                                        "medium": "betslip",
+                                        "providerId": "112"
+                                    },
+                                    {
+                                        "enabled": true,
+                                        "countries": [
+                                            "IE"
+                                        ],
+                                        "drawImageUrl": "https://static.livescore.com/common/draw-icon.png",
+                                        "actionLink": {
+                                            "desktop": "https://www.livescorebet.com/ie/dl/addtobetslip?selectionIds={selectionIds}\u0026stake={stake}\u0026betType={betType}\u0026bonusCode={bonusCode}\u0026lsm_click_id={lsmClickId}\u0026lsm_aid={lsmAId}\u0026platform={platform}\u0026medium={medium}\u0026feature={feature}\u0026campaign={campaign}\u0026btag={btag}",
+                                            "mobile": "https://livescorebetuk.onelink.me/YgqL?pid=Convergence\u0026c={bannerId}\u0026af_dp=livescorebetuk%3A%2F%2Faddtobetslip%3FselectionIds%3D{selectionIds}%26stake%3D{stake}%26betType%3D{betType}%26bonusCode%3D{bonusCode}%26lsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}\u0026af_android_url=https%3A%2F%2Flivescorebet.com%2Fie%2Fdl%2Faddtobetslip%3FselectionIds%3D{selectionIds}%26stake%3D{stake}%26betType%3D{betType}%26bonusCode%3D{bonusCode}%26lsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}\u0026af_ios_url=https%3A%2F%2Flivescorebet.com%2Fie%2Fdl%2Faddtobetslip%3FselectionIds%3D{selectionIds}%26stake%3D{stake}%26betType%3D{betType}%26bonusCode%3D{bonusCode}%26lsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}"
+                                        },
+                                        "stake": "10.00",
+                                        "bannerId": "c_LS6_odds_web_IRE",
+                                        "bonus": "50",
+                                        "bonusCode": "85972",
+                                        "currency": "EUR",
+                                        "marketType": "1001159858",
+                                        "handicap": "0",
+                                        "medium": "betslip",
+                                        "providerId": "112"
+                                    }
+                                ],
+                                "welcomeOfferWidgets": [
+                                    {
+                                        "enabled": true,
+                                        "countries": [
+                                            "GB"
+                                        ],
+                                        "imageUrl": "https://static.livescore.com/common/ls6-odds-widget-wo.png",
+                                        "actionLink": "https://www.livescorebet.com/uk/promo/p/2023-CONV-SD-1/index.html?bonusCode={bonusCode}\u0026lsm_click_id={lsmClickId}\u0026platform={platform}\u0026medium={medium}\u0026feature={feature}\u0026lsm_aid={lsmAId}\u0026campaign={campaign}\u0026btag={btag}",
+                                        "bannerId": "c_LS6_native_placement_web_UKACCAB10G40",
+                                        "bonus": "40",
+                                        "bonusCode": "",
+                                        "medium": "acca_plus"
+                                    },
+                                    {
+                                        "enabled": true,
+                                        "countries": [
+                                            "IE"
+                                        ],
+                                        "imageUrl": "https://static.livescore.com/common/ls6-ie-odds-widget-wo.png",
+                                        "actionLink": "https://www.livescorebet.com/ie/promo/p/2023-CONV-SD-1/index.html?bonusCode={bonusCode}\u0026lsm_click_id={lsmClickId}\u0026platform={platform}\u0026medium={medium}\u0026feature={feature}\u0026lsm_aid={lsmAId}\u0026campaign={campaign}\u0026btag={btag}",
+                                        "bannerId": "c_LS6_native_placement_web_IREB10G50",
+                                        "bonus": "50",
+                                        "bonusCode": "81690",
+                                        "medium": "acca_plus"
+                                    }
+                                ],
+                                "bannerWidgets": [
+                                    {
+                                        "enabled": true,
+                                        "countries": [
+                                            "GB"
+                                        ],
+                                        "bannerId": "c_LS6_display_web_UKSQUADS",
+                                        "imageUrl": "https://static.livescore.com/common/ls6-odds-widget-squads.png",
+                                        "actionLink": {
+                                            "desktop": "https://www.livescorebet.com/uk/dl/fives?lsm_click_id={lsmClickId}\u0026platform={platform}\u0026medium={medium}\u0026feature={feature}\u0026lsm_aid={lsmAId}\u0026campaign={bannerId}\u0026btag={bannerId}",
+                                            "mobile": "https://livescorebetuk.onelink.me/YgqL?pid=Convergence\u0026c={bannerId}\u0026af_dp=livescorebetuk%3A%2F%2Ffives%3Flsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}\u0026af_android_url=https%3A%2F%2Flivescorebet.com%2Fuk%2Fdl%2Ffives%3Flsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}\u0026af_ios_url=https%3A%2F%2Flivescorebet.com%2Fuk%2Fdl%2Ffives%3Flsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}"
+                                        },
+                                        "medium": "squads"
+                                    },
+                                    {
+                                        "enabled": true,
+                                        "countries": [
+                                            "IE"
+                                        ],
+                                        "bannerId": "c_LS6_display_web_IRESQUADS",
+                                        "imageUrl": "https://static.livescore.com/common/ls6-odds-widget-squads.png",
+                                        "actionLink": {
+                                            "desktop": "https://www.livescorebet.com/ie/dl/fives?lsm_click_id={lsmClickId}\u0026platform={platform}\u0026medium={medium}\u0026feature={feature}\u0026lsm_aid={lsmAId}\u0026campaign={bannerId}\u0026btag={bannerId}",
+                                            "mobile": "https://livescorebetuk.onelink.me/YgqL?pid=Convergence\u0026c={bannerId}\u0026af_dp=livescorebetuk%3A%2F%2Ffives%3Flsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}\u0026af_android_url=https%3A%2F%2Flivescorebet.com%2Fie%2Fdl%2Ffives%3Flsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}\u0026af_ios_url=https%3A%2F%2Flivescorebet.com%2Fie%2Fdl%2Ffives%3Flsm_click_id%3D{lsmClickId}%26platform%3D{platform}%26medium%3D{medium}%26feature%3D{feature}%26lsm_aid%3D{lsmAId}%26campaign%3D{campaign}%26btag%3D{btag}"
+                                        },
+                                        "medium": "squads"
+                                    }
+                                ]
+                            },
+                            "tvGuide": {
+                                "enabled": true,
+                                "countries": [
+                                    "GB",
+                                    "NL",
+                                    "IE"
+                                ]
+                            },
+                            "ageGating": {
+                                "enabled": true,
+                                "countries": [
+                                    "IE",
+                                    "NL",
+                                    "GB"
+                                ],
+                                "countryAgeThresholds": {
+                                    "16": [
+                                        "EE"
+                                    ],
+                                    "20": [
+                                        "JP",
+                                        "NG"
+                                    ],
+                                    "21": [
+                                        "MY",
+                                        "IN",
+                                        "GR",
+                                        "US",
+                                        "VN",
+                                        "AM",
+                                        "CI",
+                                        "KZ"
+                                    ],
+                                    "24": [
+                                        "NL"
+                                    ],
+                                    "default": "18"
+                                }
+                            },
+                            "e2Widgets": {
+                                "vote": {
+                                    "enabled": true,
+                                    "blockedCountries": [
+                                        "ES",
+                                        "MY",
+                                        "ID"
+                                    ],
+                                    "daysBeforeStart": 90,
+                                    "daysAfterStart": 1
+                                },
+                                "smart-odds": {
+                                    "enabled": true,
+                                    "countries": [
+                                        "US",
+                                        "SK",
+                                        "JP",
+                                        "PE",
+                                        "GQ",
+                                        "RO",
+                                        "GB",
+                                        "DE",
+                                        "CH",
+                                        "AT",
+                                        "UA",
+                                        "AM",
+                                        "AU",
+                                        "HU",
+                                        "IS",
+                                        "LU",
+                                        "PL",
+                                        "BY",
+                                        "BG",
+                                        "HR",
+                                        "CY",
+                                        "GR",
+                                        "KZ",
+                                        "MT",
+                                        "MU",
+                                        "SI",
+                                        "AZ",
+                                        "BD",
+                                        "CM",
+                                        "CA",
+                                        "IN",
+                                        "MD",
+                                        "NZ",
+                                        "TJ",
+                                        "TM",
+                                        "UZ",
+                                        "KH",
+                                        "MZ",
+                                        "UG",
+                                        "VN",
+                                        "GH",
+                                        "BE",
+                                        "BR",
+                                        "DK",
+                                        "IE",
+                                        "KE",
+                                        "NG",
+                                        "SN",
+                                        "SE",
+                                        "NL",
+                                        "ZA",
+                                        "FI",
+                                        "ZM",
+                                        "CD",
+                                        "GN",
+                                        "ML",
+                                        "SL",
+                                        "TZ",
+                                        "AO",
+                                        "MW",
+                                        "RS",
+                                        "AZ",
+                                        "BF",
+                                        "BI",
+                                        "EG",
+                                        "GA",
+                                        "CI",
+                                        "NP",
+                                        "SO",
+                                        "LK",
+                                        "KG",
+                                        "PT",
+                                        "KW",
+                                        "NO",
+                                        "BJ",
+                                        "AR",
+                                        "MA",
+                                        "MN",
+                                        "MM",
+                                        "CF",
+                                        "NE",
+                                        "TG",
+                                        "BA",
+                                        "TD",
+                                        "IT",
+                                        "CL",
+                                        "ET",
+                                        "LV",
+                                        "CO",
+                                        "CG",
+                                        "LB",
+                                        "LR",
+                                        "MX",
+                                        "PK",
+                                        "EE",
+                                        "RW",
+                                        "TD"
+                                    ],
+                                    "daysBeforeStart": 90,
+                                    "daysAfterStart": 1
+                                }
+                            },
+                            "links": {
+                                "globalMenu": {
+                                    "enabled": true,
+                                    "countries": [
+                                        "NG"
+                                    ],
+                                    "deviceType": "mobile",
+                                    "links": {
+                                        "NG": {
+                                            "betting": "https://livescorelsbetng.onelink.me/vKUx/1t4zg3a5",
+                                            "casino": "https://livescorelsbetng.onelink.me/vKUx/fw9hplzy"
+                                        }
+                                    }
+                                },
+                                "topMenu": {
+                                    "betLink": {
+                                        "NG": {
+                                            "desktopLink": "https://lvscrbet.com/3gep97M",
+                                            "mobileLink": "https://lvscrbet.com/3J0QOFB"
+                                        },
+                                        "GB": {
+                                            "desktopLink": "https://lvscrbet.com/3IzlYTC",
+                                            "mobileLink": "https://lvscrbet.com/3Loghd0"
+                                        },
+                                        "IE": {
+                                            "desktopLink": "https://lvscrbet.com/3qCPCS3",
+                                            "mobileLink": "https://lvscrbet.com/3JRzm7e"
+                                        },
+                                        "NL": {
+                                            "desktopLink": "https://lvscrbet.com/3E3pVzD",
+                                            "mobileLink": "https://lvscrbet.com/3M8gxwJ"
+                                        }
+                                    }
+                                },
+                                "lsbet": {
+                                    "appDownloadLink": "https://www.livescorebet.com/ng/download/Android/LiveScoreBet.apk"
+                                },
+                                "staticLinks": {
+                                    "iosDownloadLink": "https://apps.apple.com/gb/app/livescore-live-sport-updates/id356928178",
+                                    "androidDownloadLink": "https://v42xp.app.goo.gl/JU3f",
+                                    "greekLink": "https://certifications.gamingcommission.gov.gr/publicRecordsOnline/Lists/Affiliates/DispForm.aspx?ID=3\u0026Source=https%3A%2F%2Fcertifications%2Egamingcommission%2Egov%2Egr%2FpublicRecordsOnline%2FSitePages%2FAffiliatesOnline%2Easpx\u0026ContentTypeId=0x010067616551F173FA44A4F23E10CE02967A"
+                                },
+                                "burgerMenu": {
+                                    "whatIsNew": "https://help.livescore.com/hc/en-gb/categories/4593251745938-What-s-New"
+                                },
+                                "crossApp": {
+                                    "favouriteTeams": "https://livescoremedia.onelink.me/5KrT/fpqflvaa",
+                                    "favouriteMatches": "https://livescoremedia.onelink.me/5KrT/72uzz6cv",
+                                    "audio": "https://livescoremedia.onelink.me/5KrT?af_web_dp=https%3A%2F%2Fwww.livescore.com%2Fen%2Fmobile%2F\u0026af_xp=custom\u0026pid=LSM_WebDLtheApp\u0026c=SEV\u0026af_adset=SummaryTab\u0026af_dp=livescore%3A%2F%2FmatchDetails%3Fspc%3D1%26pid%3D8%26mid%3D%7BID%7D%26tab%3Dsummary\u0026af_force_deeplink=true",
+                                    "stats": "https://livescoremedia.onelink.me/5KrT?af_web_dp=https%3A%2F%2Fwww.livescore.com%2Fen%2Fmobile%2F\u0026af_xp=custom\u0026pid=LSM_WebDLtheApp\u0026c=SEV\u0026af_dp=livescore%3A%2F%2FmatchDetails%3Fspc%3D1%26pid%3D8%26mid%3D%7BID%7D%26tab%3Dstatistics\u0026af_adset=StatsTab\u0026af_force_deeplink=true"
+                                }
+                            },
+                            "sportal": {
+                                "homeCategories": [
+                                    "football",
+                                    "cricket"
+                                ],
+                                "preview": {
+                                    "enabled": true
+                                }
+                            },
+                            "streaming": {
+                                "enabled": true,
+                                "football": {
+                                    "15": {
+                                        "allowedCountries": [
+                                            "NG",
+                                            "GB",
+                                            "IE"
+                                        ]
+                                    },
+                                    "112": {
+                                        "allowedCountries": [
+                                            "NG",
+                                            "NL",
+                                            "JE",
+                                            "IE",
+                                            "IM",
+                                            "GB",
+                                            "GG"
+                                        ],
+                                        "mobile": "https://livescorebetuk.onelink.me/YgqL?pid=Convergence\u0026c=Streaming_MWeb\u0026af_dp=livescorebetuk%3A%2F%2Fevent%3FeventID%3D{eventId}%26view%3Dstream\u0026af_web_dp=https%3A%2F%2Flivescorebet.com%2Fuk\u0026af_adset={eventId}",
+                                        "desktop": "https://livescorebet.com/uk/dl/event?eventId={eventId}\u0026view=stream\u0026btag=c_Streaming_{eventId}",
+                                        "NG": {
+                                            "mobile": "https://www.livescorebet.com/ng/promo/p/2022-img-stream-2/index.html?btag=c_Streaming_mobileweb_{eventId}",
+                                            "desktop": "https://www.livescorebet.com/ng/promo/p/2022-img-stream-2/index.html?btag=c_Streaming_desktopweb_{eventId}"
+                                        },
+                                        "NL": {"mobile": "https://livescorebetnl.onelink.me/DUd1?pid=Convergence\u0026af_web_dp=https://www.livescorebet.com/nl-nl/\u0026c=SEV\u0026af_dp=livescorebetnl://event?eventID={eventId}\u0026view=stream\u0026af_adset={eventId}"
+                                    }
+                                }
+                            },
+                            "tennis": {
+                                "112": {
+                                    "allowedCountries": [
+                                        "NG",
+                                        "JE",
+                                        "IE",
+                                        "IM",
+                                        "GB",
+                                        "GG"
+                                    ],
+                                    "mobile": "https://livescorebetuk.onelink.me/YgqL?pid=Convergence\u0026c=Streaming_MWeb\u0026af_dp=livescorebetuk%3A%2F%2Fevent%3FeventID%3D{eventId}%26view%3Dstream\u0026af_web_dp=https%3A%2F%2Flivescorebet.com%2Fuk\u0026af_adset={eventId}",
+                                    "desktop": "https://livescorebet.com/uk/dl/event?eventId={eventId}\u0026view=stream\u0026btag=c_Streaming_{eventId}",
+                                    "NG": {
+                                        "mobile": "https://livescorelsbetng.onelink.me/vKUx?pid=Convergence\u0026c=Streaming_MWeb\u0026af_dp=livescorebetng%3A%2F%2Fevent%3FeventID%3D{eventId}%26view%3Dstream\u0026af_web_dp=https%3A%2F%2Flivescorebet.com%2Fng\u0026af_adset={eventId}",
+                                        "desktop": "https://livescorebet.com/ng/dl/event?eventId={eventId}\u0026view=stream\u0026btag=Convergence_Streaming_{eventId}"
+                                    }
+                                }
+                            },
+                            "broadcaster": {
+                                "112": {
+                                    "countries": [
+                                        "NL",
+                                        "GB",
+                                        "IE"
+                                    ],
+                                    "broadcasters": {
+                                        "ABELSON": {
+                                            "Viaplay": [
+                                                {
+                                                    "enabled": false,
+                                                    "countries": [
+                                                        "NL",
+                                                        "GB",
+                                                        "IE"
+                                                    ],
+                                                    "competitionsIds": [
+                                                    ],
+                                                    "placements": [
+                                                        "sev",
+                                                        "competition",
+                                                        "teams",
+                                                        "mev"
+                                                    ],
+                                                    "iconUrl": "https://cdn-static-dev.livescore.com/dev/broadcaster/medium/viaplay.png"
+                                                }
+                                            ],
+                                            "TNT Sports 1": [
+                                                {
+                                                    "enabled": true,
+                                                    "countries": [
+                                                        "GB"
+                                                    ],
+                                                    "competitionsIds": [
+                                                        "65"
+                                                    ],
+                                                    "placements": [
+                                                        "sev",
+                                                        "mev"
+                                                    ],
+                                                    "iconUrl": "https://static.livescore.com/broadcaster/medium/tnt-sports-1.png"
+                                                }
+                                            ],
+                                            "Sky Sports": [
+                                                {
+                                                    "enabled": false,
+                                                    "countries": [
+                                                        "NL",
+                                                        "GB",
+                                                        "IE"
+                                                    ],
+                                                    "competitionsIds": [
+                                                    ],
+                                                    "placements": [
+                                                        "sev",
+                                                        "competition",
+                                                        "teams",
+                                                        "mev"
+                                                    ],
+                                                    "iconUrl": "https://cdn-static-dev.livescore.com/dev/broadcaster/medium/skysports.png"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "enabled": true
+                            },
+                            "universalBroadcaster": {
+                                "enabled": true,
+                                "broadcasters": {
+                                    "Apple TV": [
+                                        {
+                                            "enabled": true,
+                                            "competitionsIds": [
+                                                "145"
+                                            ],
+                                            "countries": [
+                                            ],
+                                            "placements": [
+                                                "sev",
+                                                "competition",
+                                                "teams",
+                                                "mev"
+                                            ],
+                                            "iconUrl": "https://static.livescore.com/broadcaster/medium/apple-tv.png"
+                                        },
+                                        {
+                                            "enabled": true,
+                                            "competitionsIds": [
+                                                "113"
+                                            ],
+                                            "countries": [
+                                                "GB",
+                                                "IE"
+                                            ],
+                                            "placements": [
+                                                "sev",
+                                                "competition",
+                                                "teams"
+                                            ],
+                                            "iconUrl": "https://static.livescore.com/broadcaster/medium/apple-tv.png"
+                                        },
+                                        {
+                                            "enabled": true,
+                                            "competitionsIds": [
+                                                "65",
+                                                "75",
+                                                "77",
+                                                "492",
+                                                "113"
+                                            ],
+                                            "countries": [
+                                                "RS",
+                                                "SE",
+                                                "MK",
+                                                "PT",
+                                                "FI",
+                                                "SI",
+                                                "SK"
+                                            ],
+                                            "placements": [
+                                                "sev",
+                                                "competition",
+                                                "teams"
+                                            ],
+                                            "iconUrl": "https://static.livescore.com/broadcaster/medium/apple-tv.png"
+                                        }
+                                    ],
+                                    "TNT Sports 1": [
+                                        {
+                                            "enabled": true,
+                                            "competitionsIds": [
+                                                "36",
+                                                "60",
+                                                "62"
+                                            ],
+                                            "countries": [
+                                                "GB"
+                                            ],
+                                            "placements": [
+                                                "sev",
+                                                "competition",
+                                                "mev"
+                                            ],
+                                            "iconUrl": "https://static.livescore.com/broadcaster/medium/tnt-sports-1.png"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "amp": {
+                            "enabled": true
+                        },
+                        "auth": {
+                            "enabled": true,
+                            "countries": [
+                                "IE",
+                                "GB",
+                                "MY",
+                                "VN",
+                                "ID"
+                            ],
+                            "refreshIntervalDenominator": 14,
+                            "show_adult_section": true,
+                            "sideMenuAuth": {
+                                "enabled": true,
+                                "countries": [
+                                    "IE",
+                                    "GB",
+                                    "MY",
+                                    "VN",
+                                    "ID"
+                                ]
+                            },
+                            "userInfo": {
+                                "refreshInterval": 3600
+                            }
+                        },
+                        "smartBanner": {
+                            "interval": 3
+                        },
+                        "ads": {
+                            "blockerMeasurerScriptEnabled": true,
+                            "prebid": {
+                                "enabled": true,
+                                "mobile": {
+                                    "enabled": true,
+                                    "countries": [
+                                        "GB",
+                                        "US",
+                                        "DE",
+                                        "SG",
+                                        "BE",
+                                        "NL",
+                                        "TH",
+                                        "IE",
+                                        "CA",
+                                        "ZA",
+                                        "IT",
+                                        "HK",
+                                        "CH",
+                                        "DK",
+                                        "AU",
+                                        "NG",
+                                        "GE",
+                                        "AE",
+                                        "TZ",
+                                        "NO",
+                                        "AT",
+                                        "FR",
+                                        "KE",
+                                        "ES",
+                                        "PL",
+                                        "RS",
+                                        "GH",
+                                        "RO",
+                                        "KH",
+                                        "UG",
+                                        "KR",
+                                        "GR",
+                                        "IN",
+                                        "MM",
+                                        "SE",
+                                        "VN",
+                                        "SA",
+                                        "AL",
+                                        "CZ",
+                                        "HR",
+                                        "BN",
+                                        "QA",
+                                        "BG",
+                                        "EE",
+                                        "IL"
+                                    ]
+                                }
+                            },
+                            "refreshInterval": {
+                                "defaultRefresh": 50,
+                                "staticAds": {
+                                    "ids": [
+                                        "Infeed_MPU",
+                                        "Infeed_MPU_1",
+                                        "Infeed_MPU_2",
+                                        "Infeed_MPU_3",
+                                        "Infeed_MPU_4"
+                                    ],
+                                    "countries": [
+                                        "US"
+                                    ]
+                                },
+                                "customRefreshAds": [
+                                    {
+                                        "refreshInterval": null,
+                                        "ids": [
+                                        ],
+                                        "countries": [
+                                        ]
+                                    },
+                                    {
+                                        "refreshInterval": 300,
+                                        "ids": [
+                                            "Infeed_MPU"
+                                        ],
+                                        "countries": [
+                                            "GB"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "nativeBanner": {
+                                "enabled": true,
+                                "sports": [
+                                    "football",
+                                    "hockey",
+                                    "basketball",
+                                    "tennis",
+                                    "cricket"
+                                ],
+                                "countries": [
+                                    "AU",
+                                    "BE",
+                                    "BG",
+                                    "CA",
+                                    "CY",
+                                    "DE",
+                                    "DK",
+                                    "EE",
+                                    "FI",
+                                    "GB",
+                                    "GE",
+                                    "GH",
+                                    "GR",
+                                    "HU",
+                                    "IE",
+                                    "IS",
+                                    "JP",
+                                    "KE",
+                                    "LU",
+                                    "MT",
+                                    "MU",
+                                    "MD",
+                                    "MZ",
+                                    "NG",
+                                    "NL",
+                                    "NO",
+                                    "NZ",
+                                    "SE",
+                                    "SI",
+                                    "SK",
+                                    "SN",
+                                    "UG",
+                                    "ZA",
+                                    "ZM",
+                                    "ID",
+                                    "VN",
+                                    "AR",
+                                    "AT",
+                                    "AZ",
+                                    "BD",
+                                    "BJ",
+                                    "BR",
+                                    "KH",
+                                    "CM",
+                                    "CL",
+                                    "CO",
+                                    "CI",
+                                    "ET",
+                                    "FR",
+                                    "GN",
+                                    "IN",
+                                    "IT",
+                                    "KZ",
+                                    "LV",
+                                    "LT",
+                                    "ML",
+                                    "MX",
+                                    "MN",
+                                    "ME",
+                                    "MM",
+                                    "PE",
+                                    "PL",
+                                    "PT",
+                                    "RO",
+                                    "RS",
+                                    "ES",
+                                    "CH",
+                                    "TJ",
+                                    "TZ",
+                                    "TH",
+                                    "TT",
+                                    "TN",
+                                    "US",
+                                    "UZ",
+                                    "LB",
+                                    "LR",
+                                    "PK"
+                                ],
+                                "blockedCountries": [
+                                ],
+                                "user": [
+                                    "isAdult"
+                                ],
+                                "adPos": 10
+                            },
+                            "mpu": {
+                                "enabled": true,
+                                "eventInterval": {
+                                    "default": 6,
+                                    "homePageMpu": 6,
+                                    "homePageMpu2": 6
+                                },
+                                "artificialDelay": {
+                                    "enabled": true,
+                                    "timeout": 1
+                                },
+                                "persistent": {
+                                    "enabled": true,
+                                    "countries": [
+                                        "GB"
+                                    ]
+                                },
+                                "pages": {
+                                    "home": {
+                                        "inViewMargins": {
+                                            "default": "70"
+                                        },
+                                        "countries": [
+                                        ]
+                                    },
+                                    "dateOrCategory": {
+                                        "countries": [
+                                        ]
+                                    },
+                                    "live": {
+                                        "countries": [
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "consentManagement": {
+                            "enabled": true,
+                            "countries": [
+                                "GB",
+                                "US",
+                                "AT",
+                                "BE",
+                                "BG",
+                                "HR",
+                                "CY",
+                                "CZ",
+                                "DK",
+                                "EE",
+                                "FI",
+                                "FR",
+                                "DE",
+                                "GR",
+                                "HU",
+                                "IE",
+                                "IT",
+                                "LV",
+                                "LT",
+                                "LU",
+                                "MT",
+                                "NL",
+                                "PL",
+                                "PT",
+                                "RO",
+                                "SK",
+                                "SI",
+                                "ES",
+                                "SE"
+                            ]
+                        },
+                        "mev": {
+                            "customOrder": {
+                                "enabled": true,
+                                "countries": [
+                                    "NL",
+                                    "NG",
+                                    "GB",
+                                    "ID",
+                                    "IE"
+                                ]
+                            }
+                        },
+                        "announcements": {
+                            "isFromXPush": false
+                        },
+                        "bettingFeatures": {
+                            "enabled": true,
+                            "countries": [
+                                "NL"
+                            ]
+                        },
+                        "permutive": {
+                            "enabled": true,
+                            "countries": [
+                                "GB"
+                            ]
+                        },
+                        "bookieBonus": {
+                            "enabled": true,
+                            "countries": [
+                                "GH",
+                                "KE",
+                                "MX",
+                                "IN",
+                                "NG",
+                                "IE",
+                                "GB",
+                                "ES"
+                            ],
+                            "user": [
+                                "isAdult",
+                                "notSelfExcluded"
+                            ]
+                        },
+                        "liveBlog": {
+                            "enabled": true
+                        },
+                        "splashScreen": [
+                            {
+                                "enabled": false,
+                                "countries": [
+                                ],
+                                "deviceType": "mobile",
+                                "interval": 86400,
+                                "content": [
+                                    {
+                                        "url": "https://static.livescore.com/web/medium/splash-page-banner-background.png",
+                                        "titleUrl": "https://static.livescore.com/web/medium/splash-page-media-logo.png",
+                                        "text": "Scores, stats \u0026 news!",
+                                        "actionText": "Continue to",
+                                        "actionUrl": "https://livescore.com/",
+                                        "buttonLogo": "https://static.livescore.com/web/medium/splash-page-logo-black.png"
+                                    },
+                                    {
+                                        "url": "https://static.livescore.com/web/medium/splash-page-banner-background.png",
+                                        "titleUrl": "https://static.livescore.com/web/medium/splash-page-bet-logo.png",
+                                        "text": "Secure, Best Boost \u0026 Fast Payout",
+                                        "actionText": "Continue to",
+                                        "actionUrl": "https://www.livescorebet.com/ng/dl/home?btag=lsm-splash-screen-ng",
+                                        "type": "bet",
+                                        "buttonLogo": "https://static.livescore.com/web/medium/splash-page-logo-bet-black.png"
+                                    }
+                                ]
+                            }
+                        ],
+                        "experiment": {
+                            "enabled": false,
+                            "countries": [
+                                "GB",
+                                "IE",
+                                "NL"
+                            ]
+                        }
+                    },
+                    "pageDictFiles": {
+                        "news": {
+                            "newsHome": "News Home",
+                            "justNow": "just now",
+                            "hours": "hours",
+                            "minute": "minute",
+                            "ago": "ago",
+                            "relatedArticles": "Related Articles",
+                            "seconds": "seconds",
+                            "articleNotFound": "Article not found",
+                            "breakingnews": "BREAKING",
+                            "week": "week",
+                            "updated": "Updated",
+                            "days": "days",
+                            "topStories": "Top Stories",
+                            "hour": "hour",
+                            "years": "years",
+                            "months": "months",
+                            "exclusive": "EXCLUSIVE",
+                            "weeks": "weeks",
+                            "advertorial": "SPONSORED",
+                            "video": "VIDEO",
+                            "day": "day",
+                            "previewHeader": "Sportal Article Preview",
+                            "newsHomeShort": "News",
+                            "minutes": "minutes",
+                            "month": "month",
+                            "relatedTo": "Articles related to",
+                            "year": "year"
+                        },
+                        "shortTime": {
+                            "hour": "h",
+                            "minute": "m",
+                            "second": "s",
+                            "day": "d"
+                        }
+                    },
+                    "publicDomain": "https://www.livescore.com",
+                    "buildId": "YJUSHGk8l7Aic4z1DXaLK",
+                    "__N_SSP": true
+                },
+                "page": "/",
+                "query": {
+                },
+                "buildId": "YJUSHGk8l7Aic4z1DXaLK",
+                "runtimeConfig": {
+                    "PUBLIC_SPORTAL_API_URL": "https://content.api.uk1.sportal365.com",
+                    "PUBLIC_SPORTAL_LIVEBLOG_API_URL": "https://liveblog.api.uk1.sportal365.com",
+                    "PUBLIC_SPORTAL_FOOTBALL_API_URL": "https://football.api.uk1.sportal365.com",
+                    "PUBLIC_API_URL": "https://prod-public-api.livescore.com",
+                    "PUBLIC_MEDIA_API_URL": "https://media-api.livescore.com",
+                    "PUBLIC_FAVOURITES_API_URL": "https://favorites-api.livescore.com",
+                    "PUBLIC_TEAMS_API_URL": "https://team-api.livescore.com",
+                    "PUBLIC_COMMENTARY_API_URL": "https://commentary-api.livescore.com",
+                    "PUBLIC_SEARCH_API_URL": "https://search-api.livescore.com",
+                    "PUBLIC_DOMAIN": "https://www.livescore.com",
+                    "PUBLIC_LOCAL_DOMAIN": "http://localhost:3000",
+                    "PUBLIC_LANGUAGE_SELECTOR": "false",
+                    "PUBLIC_XTREME_PUSH_KEY": "asRjAtD0D_B1IoCPpIUrMJ0YCmb75d_E",
+                    "PUBLIC_AMP_SEGMENT_WRITE_KEY": "YPcHWm4UxOBlT39BV94FiirhV9IMwaEA",
+                    "PUBLIC_SEGMENT_WRITE_KEY": "1sngMUwHDCyWlKfx2nyyru27CQPRp2DW",
+                    "PUBLIC_CDN": "/ls-web-assets/",
+                    "PUBLIC_GOOGLE_ADS_ENV": "production",
+                    "PUBLIC_BADGES_MEDIUM_RES_BUCKET_URL": "https://lsm-static-prod.livescore.com/medium/",
+                    "PUBLIC_BADGES_HIGH_RES_BUCKET_URL": "https://lsm-static-prod.livescore.com/high/",
+                    "PUBLIC_AMP_CMP_DOMAIN": "https://amp.livescore.com",
+                    "PUBLIC_FLAGS_API_URL": "https://static.livescore.com/i2/fh/",
+                    "PUBLIC_PLATFORM_API_URL": "https://gateway.livescore.com/sportsbook/gateway/v1/api/platform/lsm/",
+                    "PUBLIC_GEO_API_URL": "https://geo.livescore.com",
+                    "PUBLIC_PORTAL_PAGES_DOMAIN": "https://www.livescore.com",
+                    "PUBLIC_FTP_IG_URL": "https://livescore6.livescore.com",
+                    "PUBLIC_FTP_E2_URL": "https://ls6-ftp.livescore.com",
+                    "PUBLIC_DEPLOY_ENV": "prod",
+                    "PUBLIC_CAPTCHA_SITE_KEY": "6Lfl9dgkAAAAACGTazJ484cJrbfGe1a7zGzKp3S8",
+                    "PUBLIC_AMPLITUDE_API_KEY": "ea472a0a7cac6a9831aa6975743c7a28",
+                    "PUBLIC_AMPLITUDE_DEPLOYMENT_KEY": "client-0LpuuS3TjY3w47icxvvo95tDRxxFgIzh"
+                },
+                "isFallback": false,
+                "dynamicIds": [
+                    32749
+                ],
+                "gssp": true,
+                "customServer": true,
+                "appGip": true,
+                "locale": "en",
+                "locales": [
+                    "en",
+                    "nl",
+                    "pt",
+                    "es"
+                ],
+                "defaultLocale": "en",
+                "scriptLoader": [
+                ]
+            }</script>
+    </body>
+</html>
